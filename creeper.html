@@ -1,0 +1,30 @@
+<canvas width="600" height="400"></canvas>
+<script>
+   // Rectángulo 1: 350, 300 (cabeza).
+//Rectángulos 2 y 3: 90, 90 (ojos).
+//Rectángulo 4: 70, 100 (nariz).
+//Rectángulos 5 y 6: 40, 110 (parte de la boca). Su canvas debe tener el tamaño de 600 x 400 pixeles.
+var pantalla = document.querySelector("canvas");
+var pincel = pantalla.getContext("2d");
+
+pincel.fillStyle = "darkgreen";
+pincel.fillRect(0,0,350,300);
+
+//------------OJOS-----------
+pincel.fillStyle = "black";
+pincel.fillRect(50,45,90,90);
+
+pincel.fillStyle = "black";
+pincel.fillRect(210,45,90,90);
+
+//------------NARIZ-----------
+pincel.fillStyle = "black";
+pincel.fillRect(140,135,70,100);
+
+//------------BOCA-----------
+pincel.fillStyle = "black";
+pincel.fillRect(70,190,70,110);
+
+pincel.fillStyle = "black";
+pincel.fillRect(210,190,70,110);
+</script>
